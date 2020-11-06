@@ -52,6 +52,7 @@
   --footer-color: #2f303a;
   --icon-color: #afb1b8;
   --bgc-hero: #c4c4c4;
+  --border: #eeeeee;
 }
 
 html {
@@ -166,7 +167,6 @@ address {
   display: flex;
   align-items: center;
 }
-
 .contacts-box .item + .item {
   margin-left: 50px;
 }
@@ -175,9 +175,10 @@ address {
   fill: var(--second-text-color);
 }
 .contacts-link {
+  display: inline-flex;
+  align-items: center;
   color: var(--second-text-color);
   font-weight: 500;
-  outline: 1px red solid;
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -187,9 +188,7 @@ address {
 .contacts-link:focus {
   fill: var(--button-blue);
 }
-/* .contacts-link .email-icon {
-  align-items: center;
-} */
+
 /* hero */
 .hero-section {
   max-width: 1600px;
@@ -201,6 +200,7 @@ address {
       rgba(47, 48, 58, 0.4)
     ),
     url("../images/imghero-min.jpg");
+  background-color: var(--footer-color);
 
   /* background-repeat: no-repeat;
   background-position: center;
@@ -274,16 +274,16 @@ address {
   border-radius: 4px;
 }
 .icon-space::before {
-  background-image: url(../images/icon/Groupspace.svg);
+  background-image: url(../images/icon_optima/Groupspace.svg);
 }
 .icon-clock::before {
-  background-image: url(../images/icon/clock\ 1clock.svg);
+  background-image: url(../images/icon_optima/clock\ 1clock.svg);
 }
 .icon-diagram::before {
-  background-image: url(../images/icon/diagram\ 1.svg);
+  background-image: url(../images/icon_optima/diagram\ 1.svg);
 }
 .icon-astronaut::before {
-  background-image: url(../images/icon/astronaut\ 1.svg);
+  background-image: url(../images/icon_optima/astronaut.svg);
 }
 
 /* what we do */
@@ -437,9 +437,9 @@ address {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-card-content {
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
   padding: 20px 24px;
 }
 .our-project-title {
